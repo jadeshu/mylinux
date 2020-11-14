@@ -1,0 +1,22 @@
+BOOT_SEG  EQU 0x07c0			; original address of boot-sector
+INIT_SEG  EQU 0x9000			; we move boot here - out of the way
+
+LOADER_OFF EQU 2	
+LOADER_CNTS EQU 6		
+LOADER_SEG EQU 0x9020	
+;LOADER_STACK_TOP EQU 0x9c000
+
+SYS_OFF EQU 10	
+SYS_CNTS EQU 80		
+SYS_SEG EQU 0x1000	
+SYS_ADDR EQU 0x10000	
+
+ROOT_DEV  EQU 0x306
+; 配置图形模式
+;%define CONFIG_GRAPHIC
+; 启动图形模式
+;%define CONFIG_GRAPHIC_SWITCH
+
+; 配置引导方式，只能选择一个
+%define CONFIG_BOOT_FLOPPY
+;%define CONFIG_BOOT_HARDDISK
