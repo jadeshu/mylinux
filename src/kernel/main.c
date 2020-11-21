@@ -29,6 +29,7 @@ int main()
     put_int(memory_end);
     put_str("\n");
 
+   // trap_init();
     while(1){
         io_hlt();
     }

@@ -76,7 +76,7 @@ is_disk1:
 ;关闭中断
 	cli	
 
-;将system从0x1000:0移动到0
+;将system从0x1000:0移动到0，移动128K，一次移动16K，移动8次
     mov	ax,     0
     cld  ;方向为向前
 do_move:
